@@ -107,7 +107,7 @@ controller:
   replicas: 1
 
   # -- Deploy the application controller as a StatefulSet instead of a Deployment, this is required for HA capability.
-  enableStatefulSet: true
+  enableStatefulSet: false
 
   ## Application controller commandline flags
   args:
@@ -250,7 +250,7 @@ controller:
       # -- Enables additional labels in argocd_app_labels metric
       enabled: false
       # -- Additional labels
-      labels: []
+      labels: {}
     service:
       # -- Metrics service annotations
       annotations: {}
