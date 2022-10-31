@@ -1,7 +1,7 @@
 region                                = "eu-north-1"
 aws_eks_cluster_version               = "1.22"
 name                                  = "linkspace-K8s"
-environment_name                           = "staging"
+environment_name                      = "staging-"
 public-subnet-number                  = 2
 private-subnet-number                 = 0
 cidr_block_route_table                = "0.0.0.0/0"

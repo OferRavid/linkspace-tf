@@ -13,7 +13,7 @@ terraform {
   backend "s3" {
     bucket  = "linkspace-backend-tf-state"
     key     = "terraform.tfstate"
-    region  = var.region
+    region  = "eu-north-1"
     encrypt = true
   }
 }

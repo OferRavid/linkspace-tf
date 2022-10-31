@@ -24,7 +24,7 @@ module "cluster" {
   private-subnet-number   = var.private-subnet-number
 }
 
-/* module "helm" {
+module "helm" {
   source = "./modules/helm"
   depends_on = [module.cluster]
-} */
+}
