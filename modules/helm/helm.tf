@@ -9,4 +9,8 @@ resource "helm_release" "argo" {
   wait             = true
   reset_values     = true
   values = [file("${path.module}/values-argo.yaml")]
+  set {
+    name  = "controller.service.type"
+    value = "NodePort"
+  }
 }

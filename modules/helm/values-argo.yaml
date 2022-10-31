@@ -466,14 +466,10 @@ dex:
     automountServiceAccountToken: true
 
   # -- Additional volumeMounts to the dex main container
-  volumeMounts:
-    - name: static-files
-      mountPath: /shared
+  volumeMounts: []
 
   # -- Additional volumes to the dex pod
-  volumes:
-    - name: static-files
-      emptyDir: {}
+  volumes: []
 
   # -- Extra volumes to the dex pod
   extraVolumes: []
